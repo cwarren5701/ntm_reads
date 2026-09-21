@@ -1,3 +1,4 @@
 *.fastq.gz
 IDDL-001.zip
-
+ntm_sunbeam
+./snakemake
