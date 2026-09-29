@@ -2,3 +2,6 @@
 IDDL-001.zip
 ntm_sunbeam
 ./snakemake
+processed_reads
+.gitignore.save
+.snakemake/
