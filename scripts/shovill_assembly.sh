@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "Where do the fastq files live? " path
+read -r -p "Where do the fastq files live? " path
 
 TARGET_DIR=$path
 COUNT_R1=$(find "$TARGET_DIR" -maxdepth 1 -name "R1*" | wc -l)
@@ -8,7 +8,7 @@ COUNT_R2=$(find "$TARGET_DIR" -maxdepth 1 -name "R2*" | wc -l)
 COMPLETED_COUNT=0
 echo "You have selected $path to be the location scanned. There are $COUNT_R1 R1 files and $COUNT_R2 R2 files."
 
-read -p "Do you wish to proceed? y/n " input
+read -r -p "Do you wish to proceed? y/n " input
 
 if [ "$input" == "n" ]; then 
     echo "Exiting script."
@@ -16,10 +16,10 @@ if [ "$input" == "n" ]; then
 fi
 
 # for every file with the given suffix, assign it to R1 do the following
-for R1 in *_R1.fastq; do
+for R1 in *_R1.fastq.gz; do
     # strips off suffix to get sample ID
-    SAMPLE=$(basename "$R1" _R1.fastq)
-    R2="${SAMPLE}_R2.fastq"
+    SAMPLE=$(basename "$R1" _R1.fastq.gz)
+    R2="${SAMPLE}_R2.fastq.gz"
 
     # if R2 is a file...
     if [[ -f "$R2" ]]; then 
