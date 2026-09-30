@@ -11,12 +11,15 @@ echo "You have selected $path to be the location scanned. There are $COUNT_1 R1 
 
 read -r -p "Do you wish to proceed? y/n " input
 
+
+
 if [ "$input" == "n" ]; then 
     echo "Exiting script."
     exit 1
 fi
 
 cd "$TARGET_DIR" || { echo "Failed to change directory to $TARGET_DIR"; exit 1; }
+conda activate shovill || { echo "Failed to activate conda environment 'shovill_env'"; exit 1; }
 # for every file with the given suffix, assign it to R1 do the following
 for R1 in *_1.fastq.gz; do
     # strips off suffix to get sample ID
