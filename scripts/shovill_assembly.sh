@@ -20,6 +20,7 @@ fi
 for R1 in *_1.fastq.gz; do
     # strips off suffix to get sample ID
     SAMPLE=$(basename "$R1" _1.fastq.gz)
+    print "Sample ID: $SAMPLE"
     R2="${SAMPLE}_2.fastq.gz"
 
     # if R2 is a file...
