@@ -4,8 +4,8 @@ read -r -p "Where do the fastq files live? " path
 
 TARGET_DIR=$path
 # any file name that includes "_1" is the forward read, any file name that includes "_2" is the reverse read
-COUNT_1=$(find "$TARGET_DIR" -maxdepth 1 -name "*_1*" | wc -l)
-COUNT_2=$(find "$TARGET_DIR" -maxdepth 1 -name "*_2*" | wc -l)
+COUNT_1=$(find "$TARGET_DIR" -maxdepth 1 -name "*_1.fastq.gz" | wc -l)
+COUNT_2=$(find "$TARGET_DIR" -maxdepth 1 -name "*_2.fastq.gz" | wc -l)
 COMPLETED_COUNT=0
 echo "You have selected $path to be the location scanned. There are $COUNT_1 R1 files and $COUNT_2 R2 files."
 
@@ -16,8 +16,9 @@ if [ "$input" == "n" ]; then
     exit 1
 fi
 
+cd "$TARGET_DIR" || { echo "Failed to change directory to $TARGET_DIR"; exit 1; }
 # for every file with the given suffix, assign it to R1 do the following
-for R1 in *_1*; do
+for R1 in *_1.fastq.gz; do
     # strips off suffix to get sample ID
     print "Processing file: $R1"
     SAMPLE=$(basename "$R1" _1.fastq.gz)
