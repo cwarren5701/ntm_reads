@@ -17,8 +17,7 @@ if [ "$input" == "n" ]; then
 fi
 
 # for every file with the given suffix, assign it to R1 do the following
-
-for R1 in *_1.fastq.gz; do
+for R1 in *_1*; do
     # strips off suffix to get sample ID
     print "Processing file: $R1"
     SAMPLE=$(basename "$R1" _1.fastq.gz)
