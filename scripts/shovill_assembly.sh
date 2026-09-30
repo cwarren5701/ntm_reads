@@ -3,10 +3,11 @@
 read -r -p "Where do the fastq files live? " path
 
 TARGET_DIR=$path
-COUNT_R1=$(find "$TARGET_DIR" -maxdepth 1 -name "R1*" | wc -l)
-COUNT_R2=$(find "$TARGET_DIR" -maxdepth 1 -name "R2*" | wc -l)
+# any file name that includes "_1" is the forward read, any file name that includes "_2" is the reverse read
+COUNT_1=$(find "$TARGET_DIR" -maxdepth 1 -name "*_1*" | wc -l)
+COUNT_2=$(find "$TARGET_DIR" -maxdepth 1 -name "*_2*" | wc -l)
 COMPLETED_COUNT=0
-echo "You have selected $path to be the location scanned. There are $COUNT_R1 R1 files and $COUNT_R2 R2 files."
+echo "You have selected $path to be the location scanned. There are $COUNT_1 R1 files and $COUNT_2 R2 files."
 
 read -r -p "Do you wish to proceed? y/n " input
 
@@ -16,10 +17,10 @@ if [ "$input" == "n" ]; then
 fi
 
 # for every file with the given suffix, assign it to R1 do the following
-for R1 in *_R1.fastq.gz; do
+for R1 in *_1.fastq.gz; do
     # strips off suffix to get sample ID
-    SAMPLE=$(basename "$R1" _R1.fastq.gz)
-    R2="${SAMPLE}_R2.fastq.gz"
+    SAMPLE=$(basename "$R1" _1.fastq.gz)
+    R2="${SAMPLE}_2.fastq.gz"
 
     # if R2 is a file...
     if [[ -f "$R2" ]]; then 
@@ -32,6 +33,6 @@ for R1 in *_R1.fastq.gz; do
         echo "WARNING: No matching R2 found for $R1, skipping."
     fi      
     COMPLETED_COUNT=$((COMPLETED_COUNT + 1))
-    echo "Completed $COMPLETED_COUNT of $COUNT_R1 samples."  
+    echo "Completed $COMPLETED_COUNT of $COUNT_1 samples."  
 done
     
