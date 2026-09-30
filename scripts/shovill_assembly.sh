@@ -1,13 +1,12 @@
 #!/bin/bash
 
-read -r -p "Where do the fastq files live? " path
 
-TARGET_DIR=$path
+TARGET_DIR=$(pwd)
 # any file name that includes "_1" is the forward read, any file name that includes "_2" is the reverse read
 COUNT_1=$(find "$TARGET_DIR" -maxdepth 1 -name "*_1.fastq.gz" | wc -l)
 COUNT_2=$(find "$TARGET_DIR" -maxdepth 1 -name "*_2.fastq.gz" | wc -l)
 COMPLETED_COUNT=0
-echo "You have selected $path to be the location scanned. There are $COUNT_1 R1 files and $COUNT_2 R2 files."
+echo "You have selected $TARGET_DIR to be the location scanned. There are $COUNT_1 R1 files and $COUNT_2 R2 files."
 
 read -r -p "Do you wish to proceed? y/n " input
 
