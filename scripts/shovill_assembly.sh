@@ -19,7 +19,6 @@ if [ "$input" == "n" ]; then
 fi
 
 cd "$TARGET_DIR" || { echo "Failed to change directory to $TARGET_DIR"; exit 1; }
-conda activate shovill || { echo "Failed to activate conda environment 'shovill_env'"; exit 1; }
 # for every file with the given suffix, assign it to R1 do the following
 for R1 in *_1.fastq.gz; do
     # strips off suffix to get sample ID
