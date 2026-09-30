@@ -4,7 +4,7 @@ TARGET_DIR=$(pwd)
 COUNT=$(find "$TARGET_DIR" -maxdepth 1 -name "out_IDDLNTM*" | wc -l)
 
 echo "You have selected $TARGET_DIR to be the location scanned. There are $COUNT shovill output folders there."
-read -r -p "Do you wish to proceed? y/n" input
+read -r -p "Do you wish to proceed? y/n " input
 
 if [ "$input" == "n" ]; then
     echo "Exiting script."
@@ -23,7 +23,7 @@ for SHOVILL_OUTPUT in out_IDDLNTM*; do
     # grab the contigs.fa file and run quast on it
     if [[ -f "$SHOVILL_OUTPUT/contigs.fa" ]]; then
         echo "Running Shovill on assembly #: $ASSEMBLY_NUM"
-        quast.py "/$SHOVILL_OUTPUT/contigs.fa"
+        quast.py "$SHOVILL_OUTPUT/contigs.fa"
     else
         echo "WARNING: Can't find the contigs.fa file for $SHOVILL_OUTPUT"
     fi
