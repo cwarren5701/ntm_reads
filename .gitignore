@@ -5,3 +5,4 @@ ntm_sunbeam
 processed_reads
 .gitignore.save
 .snakemake/
+assemblies
