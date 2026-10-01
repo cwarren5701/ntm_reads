@@ -17,9 +17,8 @@ COMPLETED_COUNT=0
 for SHOVILL_OUTPUT in out_IDDLNTM*; do
     ASSEMBLY_ID=${SHOVILL_OUTPUT#out_}
     echo "Processing assembly #: $ASSEMBLY_ID"
-    ls "out_$SHOVILL_OUTPUT"
 
-    if [[ -f "out_$SHOVILL_OUTPUT/contigs.fa" ]]; then
+    if [[ -f "$SHOVILL_OUTPUT/contigs.fa" ]]; then
         echo "Running bakta on assembly #: $ASSEMBLY_ID"
         # prefix, locus-tag are labels for outputs so because all the contigs files are names the same thing
         bakta --db "$HOME/bakta_db/db-light" \
@@ -27,7 +26,7 @@ for SHOVILL_OUTPUT in out_IDDLNTM*; do
             --prefix "$ASSEMBLY_ID" \
             --locus-tag "${ASSEMBLY_ID#IDDLNTM}" \
             --threads 8 \
-            "out_$ASSEMBLY_ID/contigs.fa"
+            "$SHOVILL_OUTPUT/contigs.fa"
         COMPLETED_COUNT=$((COMPLETED_COUNT + 1))
     else 
         echo "WARNING: Can't find the contigs.fa file for $SHOVILL_OUTPUT"
