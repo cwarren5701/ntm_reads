@@ -22,7 +22,7 @@ for SHOVILL_OUTPUT in out_IDDLNTM*; do
     echo "Copying and renaming assembly #: $ASSEMBLY_ID"
 
     if [[ -f "$SHOVILL_OUTPUT/contigs.fa" ]]; then
-        echo cp "$SHOVILL_OUTPUT.contigs.fa" "$new_dir/$ASSEMBLY_ID.fa"
+        cp "$SHOVILL_OUTPUT.contigs.fa" "$new_dir/$ASSEMBLY_ID.fa"
         COMPLETED_COUNT=$((COMPLETED_COUNT +1))
     fi
     echo "Copied and renamed $COMPLETED_COUNT of $COUNT contig.fa files."
