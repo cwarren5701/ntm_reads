@@ -97,6 +97,7 @@ if ARGS.exclude_names_file:
 Genus_species = ' '.join(ARGS.genus_species)
 #####Mash files to be processed######
 MASH_REPORTS = ARGS.mash_reports
+print(f"You provided the directory {MASH_REPORTS}")
 MASH_LIST = []
 try:
     for file in os.listdir(MASH_REPORTS):
