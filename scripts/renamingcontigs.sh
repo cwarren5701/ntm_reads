@@ -6,8 +6,8 @@ COUNT=$(find "$TARGET_DIR" -maxdepth 1 -name "out_IDDLNTM*" | wc -l)
 echo "You have selected $TARGET_DIR to be the location scanned. There are $COUNT shovill output folders there."
 read -r -p "Do you wish to proceed? y/n " input
 
-echo -r -r "What would you like the name of output folder to be? " new_dir
-mkdir $new_dir
+read -r -p "What would you like the name of output folder to be? " new_dir
+mkdir "$new_dir"
 
 if [ "$input" == "n" ]; then
     echo "Exiting script"
