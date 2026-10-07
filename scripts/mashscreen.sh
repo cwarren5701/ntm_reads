@@ -24,7 +24,7 @@ for SHOVILL_OUTPUT in out_IDDLNTM*; do
     if [[ -f "$GENOME" ]]; then
         echo "Running mash on assembly #: $ASSEMBLY_ID"
         mash sketch -o "$ASSEMBLY_ID" "$GENOME"
-        mash screen -w -p 4 "$HOME/ntm-reads/refseq.genomes.k21s1000.msh" "$ASSEMBLY_ID.msh" > "mash$ASSEMBLY_ID.out"
+        mash screen -w -p 4 "$HOME/ntm_reads/refseq.genomes.k21s1000.msh" "$ASSEMBLY_ID.msh" > "mash$ASSEMBLY_ID.out"
         COMPLETED_COUNT=$((COMPLETED_COUNT + 1))
     else 
         echo "WARNING: Can't find the contigs.fa file for $SHOVILL_OUTPUT"
