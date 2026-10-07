@@ -6,3 +6,4 @@ processed_reads
 .gitignore.save
 .snakemake/
 assemblies
+refseq.genomes.k21s1000.msh
