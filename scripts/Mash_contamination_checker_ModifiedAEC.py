@@ -100,7 +100,7 @@ MASH_REPORTS = ARGS.mash_reports
 MASH_LIST = []
 try:
     for file in os.listdir(MASH_REPORTS):
-        if file.endswith(".tab"):
+        if file.endswith(".out"):
             MASH_LIST.append(MASH_REPORTS + file)
     print(
         "You provided folder of {} mash reports".format(len(MASH_LIST))
