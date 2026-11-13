@@ -1,0 +1,263 @@
+IQ-TREE 3.1.4 built Sep 10 2026
+
+Input file name: ../assemblies/panaroo_out/core_gene_alignment_filtered.aln
+Type of analysis: tree reconstruction
+Random seed number: 19041
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Piyumal Demotte, Hector Banos,
+Andrew J. Roger, Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman,
+Matthew W. Hahn, Mario dos Reis, Le Sy Vinh, Gavin Huttley, Robert Lanfear, Bui Quang Minh (2026)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Molecular Biology and Evolution, msag117.
+https://doi.org/10.1093/molbev/msag117
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 123 sequences with 18812 nucleotide sites
+Number of constant sites: 11680 (= 62.088% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 11680 (= 62.088% of all sites)
+Number of parsimony informative sites: 5952
+Number of distinct site patterns: 4768
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+G4
+
+Rate parameter R:
+
+  A-C: 1.2616
+  A-G: 3.1238
+  A-T: 1.3385
+  C-G: 2.8113
+  C-T: 5.4365
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.1804
+  pi(C) = 0.3388
+  pi(G) = 0.3326
+  pi(T) = 0.1482
+
+Rate matrix Q:
+
+  A   -0.8862    0.2275    0.5531    0.1056
+  C    0.1211    -1.048    0.4978    0.4289
+  G    0.2999    0.5069   -0.8857   0.07889
+  T    0.1285    0.9803    0.1771    -1.286
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.3111
+
+ Category  Relative_rate  Proportion
+  1         0.006241       0.25
+  2         0.1132         0.25
+  3         0.614          0.25
+  4         3.267          0.25
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -91180.0646 (s.e. 629.8712)
+Unconstrained log-likelihood (without tree): -107441.7151
+Number of free parameters (#branches + #model parameters): 158
+Akaike information criterion (AIC) score: 182676.1292
+Corrected Akaike information criterion (AICc) score: 182678.8228
+Bayesian information criterion (BIC) score: 183915.2047
+
+Total tree length (sum of branch lengths): 1.1165
+Sum of internal branch lengths: 0.7012 (62.8027% of tree length)
+
+WARNING: 27 near-zero internal branches (<0.0001) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'IDDLNTM22.A' is drawn at root
+
++**IDDLNTM22.A
+|
+|                    +**IDDLNTM59
+|                 +--|
+|                 |  |  +**IDDLNTM61
+|                 |  +**|
+|                 |     +**IDDLNTM37
+|              +--|
+|              |  |                            +--IDDLNTM35
+|              |  |                         +--|
+|              |  |                         |  |     +**IDDLNTM145
+|              |  |                         |  |  +--|
+|              |  |                         |  |  |  +**IDDLNTM63
+|              |  |                         |  +--|
+|              |  |                         |     |  +**IDDLNTM102
+|              |  |                         |     +--|
+|              |  |                         |        +**IDDLNTM152
+|              |  |                      +--|
+|              |  |                      |  |  +**IDDLNTM124
+|              |  |                      |  +--|
+|              |  |                      |     +**IDDLNTM116
+|              |  |                 +----|
+|              |  |                 |    +--IDDLNTM43
+|              |  |           +-----|
+|              |  |           |     |                                                             +**IDDLNTM82
+|              |  |           |     |                                                          +--|
+|              |  |           |     |                                                          |  |  +**IDDLNTM81
+|              |  |           |     |                                                          |  +**|
+|              |  |           |     |                                                          |     +**IDDLNTM132
+|              |  |           |     |                                                       +--|
+|              |  |           |     |                                                       |  |     +**IDDLNTM19.A
+|              |  |           |     |                                                       |  |  +--|
+|              |  |           |     |                                                       |  |  |  |  +**IDDLNTM101
+|              |  |           |     |                                                       |  |  |  +**|
+|              |  |           |     |                                                       |  |  |     +**IDDLNTM21.A
+|              |  |           |     |                                                       |  +--|
+|              |  |           |     |                                                       |     |  +**IDDLNTM70
+|              |  |           |     |                                                       |     +--|
+|              |  |           |     |                                                       |        +**IDDLNTM68
+|              |  |           |     |                                                    +--|
+|              |  |           |     |                                                    |  |  +--IDDLNTM91
+|              |  |           |     |                                                    |  +--|
+|              |  |           |     |                                                    |     |  +**IDDLNTM135
+|              |  |           |     |                                                    |     +**|
+|              |  |           |     |                                                    |        +**IDDLNTM140
+|              |  |           |     |                                                 +--|
+|              |  |           |     |                                                 |  |  +**IDDLNTM131
+|              |  |           |     |                                                 |  +--|
+|              |  |           |     |                                                 |     +**IDDLNTM136
+|              |  |           |     |                                          +------|
+|              |  |           |     |                                          |      |           +**IDDLNTM42
+|              |  |           |     |                                          |      |        +**|
+|              |  |           |     |                                          |      |        |  +**IDDLNTM12.B
+|              |  |           |     |                                          |      |     +**|
+|              |  |           |     |                                          |      |     |  |  +**IDDLNTM127
+|              |  |           |     |                                          |      |     |  +--|
+|              |  |           |     |                                          |      |     |     +**IDDLNTM129
+|              |  |           |     |                                          |      |  +--|
+|              |  |           |     |                                          |      |  |  |  +**IDDLNTM108.B
+|              |  |           |     |                                          |      |  |  +--|
+|              |  |           |     |                                          |      |  |     +**IDDLNTM83
+|              |  |           |     |                                          |      +--|
+|              |  |           |     |                                          |         |        +**IDDLNTM78
+|              |  |           |     |                                          |         |     +**|
+|              |  |           |     |                                          |         |     |  +**IDDLNTM77
+|              |  |           |     |                                          |         |  +--|
+|              |  |           |     |                                          |         |  |  +**IDDLNTM64
+|              |  |           |     |                                          |         +--|
+|              |  |           |     |                                          |            +--IDDLNTM97
+|              |  |           |     |                 +------------------------|
+|              |  |           |     |                 |                        +-------IDDLNTM105
+|              |  |           |     |       +---------|
+|              |  |           |     |       |         |                      +--IDDLNTM58
+|              |  |           |     |       |         |                   +--|
+|              |  |           |     |       |         |                   |  |  +--IDDLNTM55.A
+|              |  |           |     |       |         |                   |  +--|
+|              |  |           |     |       |         |                   |     +--IDDLNTM55.B
+|              |  |           |     |       |         |  +----------------|
+|              |  |           |     |       |         |  |                |  +**IDDLNTM90
+|              |  |           |     |       |         |  |                +--|
+|              |  |           |     |       |         |  |                   +**IDDLNTM147
+|              |  |           |     |       |         +--|
+|              |  |           |     |       |            +------------------IDDLNTM2.C
+|              |  |           |     |  +----|
+|              |  |           |     |  |    |       +-----IDDLNTM40
+|              |  |           |     |  |    +-------|
+|              |  |           |     |  |            +----IDDLNTM111
+|              |  |           |     +--|
+|              |  |           |        +---------IDDLNTM52
+|              |  |        +--|
+|              |  |        |  |        +**IDDLNTM41.B
+|              |  |        |  |     +**|
+|              |  |        |  |     |  +**IDDLNTM41.A
+|              |  |        |  |  +**|
+|              |  |        |  |  |  +**IDDLNTM41.C
+|              |  |        |  +--|
+|              |  |        |     +**IDDLNTM39
+|              |  |     +**|
+|              |  |     |  +**IDDLNTM48
+|              |  |  +--|
+|              |  |  |  +**IDDLNTM46.A
+|              |  +--|
+|              |     |        +**IDDLNTM21.B
+|              |     |     +**|
+|              |     |     |  +**IDDLNTM19.C
+|              |     |  +**|
+|              |     |  |  +**IDDLNTM19.B
+|              |     +--|
+|              |        +--IDDLNTM139
+|           +--|
+|           |  |        +**IDDLNTM4.A
+|           |  |     +**|
+|           |  |     |  |        +**IDDLNTM113
+|           |  |     |  |     +**|
+|           |  |     |  |     |  +**IDDLNTM18.B
+|           |  |     |  |  +**|
+|           |  |     |  |  |  |  +**IDDLNTM112
+|           |  |     |  |  |  +**|
+|           |  |     |  |  |     +--IDDLNTM107
+|           |  |     |  +**|
+|           |  |     |     +**IDDLNTM120
+|           |  |  +--|
+|           |  |  |  |  +**IDDLNTM14.A
+|           |  |  |  +**|
+|           |  |  |     +**IDDLNTM6.B
+|           |  +--|
+|           |     |  +**IDDLNTM2.B
+|           |     +--|
+|           |        |           +**IDDLNTM7.C
+|           |        |        +**|
+|           |        |        |  +**IDDLNTM149
+|           |        |     +**|
+|           |        |     |  +**IDDLNTM121
+|           |        |  +**|
+|           |        |  |  +**IDDLNTM88
+|           |        +**|
+|           |           +**IDDLNTM146
+|        +**|
+|        |  +**IDDLNTM117
+|     +**|
+|     |  +**IDDLNTM100
+|  +**|
+|  |  +--IDDLNTM141
++**|
+|  +**IDDLNTM94
+|
+|     +**IDDLNTM10.A
+|  +**|
+|  |  +**IDDLNTM10.B
++--|
+   +**IDDLNTM137
+
+Tree in newick format:
+
+(IDDLNTM22.A:0.0000010000,(((((((IDDLNTM59:0.0000010000,(IDDLNTM61:0.0000010000,IDDLNTM37:0.0000010000):0.0000010000):0.0000719986,((((((((IDDLNTM35:0.0009502064,((IDDLNTM145:0.0000010000,IDDLNTM63:0.0000010000):0.0000947533,(IDDLNTM102:0.0000010000,IDDLNTM152:0.0000010000):0.0003246523):0.0003323900):0.0042983992,(IDDLNTM124:0.0000010000,IDDLNTM116:0.0000010000):0.0043907421):0.0137076278,IDDLNTM43:0.0229369335):0.0359936884,(((((((((IDDLNTM82:0.0000010000,(IDDLNTM81:0.0000010000,IDDLNTM132:0.0000010000):0.0000010000):0.0007559415,((IDDLNTM19.A:0.0000010000,(IDDLNTM101:0.0000010000,IDDLNTM21.A:0.0000010000):0.0000010000):0.0013648906,(IDDLNTM70:0.0000010000,IDDLNTM68:0.0000010000):0.0010519133):0.0003901536):0.0002690883,(IDDLNTM91:0.0000563838,(IDDLNTM135:0.0000010000,IDDLNTM140:0.0000010000):0.0000010000):0.0005888539):0.0019812350,(IDDLNTM131:0.0000010000,IDDLNTM136:0.0000010000):0.0035475455):0.0049946014,((((IDDLNTM42:0.0000010000,IDDLNTM12.B:0.0000010000):0.0000010000,(IDDLNTM127:0.0000010000,IDDLNTM129:0.0000010000):0.0000581516):0.0000010000,(IDDLNTM108.B:0.0000010000,IDDLNTM83:0.0000010000):0.0000581508):0.0019412866,(((IDDLNTM78:0.0000010000,IDDLNTM77:0.0000010000):0.0000010000,IDDLNTM64:0.0000010000):0.0027048568,IDDLNTM97:0.0007259588):0.0008106713):0.0054148971):0.0499861841,IDDLNTM105:0.0610890043):0.1784879746,(((IDDLNTM58:0.0027324177,(IDDLNTM55.A:0.0041180948,IDDLNTM55.B:0.0008030208):0.0026670731):0.0048658867,(IDDLNTM90:0.0000010000,IDDLNTM147:0.0000010000):0.0055680850):0.1214100139,IDDLNTM2.C:0.1348926567):0.0255427291):0.0758997718,(IDDLNTM40:0.0478597677,IDDLNTM111:0.0410281864):0.0595038869):0.0365673453,IDDLNTM52:0.0718409420):0.0180055503):0.0487546336,(((IDDLNTM41.B:0.0000010000,IDDLNTM41.A:0.0000010000):0.0000010000,IDDLNTM41.C:0.0000010000):0.0000010000,IDDLNTM39:0.0000010000):0.0014310673):0.0011598929,IDDLNTM48:0.0000010000):0.0000010000,IDDLNTM46.A:0.0000010000):0.0018357634,(((IDDLNTM21.B:0.0000010000,IDDLNTM19.C:0.0000010000):0.0000010000,IDDLNTM19.B:0.0000010000):0.0000010000,IDDLNTM139:0.0000593888):0.0006310515):0.0007868170):0.0023208166,(((IDDLNTM4.A:0.0000010000,(((IDDLNTM113:0.0000010000,IDDLNTM18.B:0.0000010000):0.0000010000,(IDDLNTM112:0.0000010000,IDDLNTM107:0.0000593812):0.0000010000):0.0000010000,IDDLNTM120:0.0000010000):0.0000010000):0.0000010000,(IDDLNTM14.A:0.0000010000,IDDLNTM6.B:0.0000010000):0.0000010000):0.0004312207,(IDDLNTM2.B:0.0000010000,((((IDDLNTM7.C:0.0000010000,IDDLNTM149:0.0000010000):0.0000010000,IDDLNTM121:0.0000010000):0.0000010000,IDDLNTM88:0.0000010000):0.0000010000,IDDLNTM146:0.0000010000):0.0000010000):0.0028056105):0.0011616666):0.0004342014,IDDLNTM117:0.0000010000):0.0000010000,IDDLNTM100:0.0000010000):0.0000022386,IDDLNTM141:0.0007719948):0.0000010000,IDDLNTM94:0.0000010000):0.0000010000,((IDDLNTM10.A:0.0000010000,IDDLNTM10.B:0.0000010000):0.0000010000,IDDLNTM137:0.0000010000):0.0010732503);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t ../assemblies/panaroo_out/core_gene_alignment_filtered.aln.treefile -m "GTR{1.2616,3.12376,1.33848,2.81134,5.43654}+F{0.180367,0.338768,0.332642,0.148222}+G4{0.311127}" --length 18812
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s ../assemblies/panaroo_out/core_gene_alignment_filtered.aln --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s ../assemblies/panaroo_out/core_gene_alignment_filtered.aln --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Oct 31 20:16:50 2026
+Total CPU time used: 179.992 seconds (0h:2m:59s)
+Total wall-clock time used: 180.243 seconds (0h:3m:0s)
+

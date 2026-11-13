@@ -1,0 +1,303 @@
+IQ-TREE version 3.1.4 for Linux x86 64-bit built Sep 10 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    the-vac (AVX512, FMA3, 377 GB RAM)
+Command: /disks/home/carter/ntm_reads/iqtree-3.1.4-Linux/bin/iqtree3_intel -s ../assemblies/panaroo_out/core_gene_alignment_filtered.aln -m GTR+G -ninit 100 -seed 19041
+Seed:    19041 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Oct 31 20:13:49 2026
+Kernel:  AVX+FMA - 1 threads (72 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 72 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file ../assemblies/panaroo_out/core_gene_alignment_filtered.aln ... Fasta format detected
+Reading fasta file: done in 0.0983441 secs using 41.46% CPU
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.0202179 secs using 96.67% CPU
+Alignment has 123 sequences with 18812 columns, 4768 distinct patterns
+5952 parsimony-informative, 1180 singleton sites, 11680 constant sites
+              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00153899 secs using 100% CPU
+   1  IDDLNTM22.A     7.87%    failed      0.00%
+   2  IDDLNTM59       6.92%    failed      0.00%
+   3  IDDLNTM100      6.92%    failed      0.00%
+   4  IDDLNTM35       8.96%    failed      4.89%
+   5  IDDLNTM61       6.92%    failed      0.00%
+   6  IDDLNTM145      8.96%    failed      3.22%
+   7  IDDLNTM82       6.49%    failed      0.00%
+   8  IDDLNTM42       7.63%    failed      0.00%
+   9  IDDLNTM44       6.92%    failed      0.00%
+  10  IDDLNTM94       7.87%    failed      0.00%
+  11  IDDLNTM127      7.63%    failed      0.00%
+  12  IDDLNTM78       7.57%    failed      0.00%
+  13  IDDLNTM81       5.23%    failed      0.00%
+  14  IDDLNTM77       7.57%    failed      0.00%
+  15  IDDLNTM48       7.87%    failed      0.00%
+  16  IDDLNTM4.A      6.92%    failed      0.00%
+  17  IDDLNTM2.B     12.72%    failed      0.02%
+  18  IDDLNTM124      8.88%    failed      4.48%
+  19  IDDLNTM19.A     6.49%    failed      0.00%
+  20  IDDLNTM91       5.35%    failed      0.00%
+  21  IDDLNTM102      8.96%    failed      3.65%
+  22  IDDLNTM21.B     6.92%    failed      0.00%
+  23  IDDLNTM19.B     6.92%    failed      0.00%
+  24  IDDLNTM129      7.63%    failed      0.00%
+  25  IDDLNTM101      6.49%    failed      0.00%
+  26  IDDLNTM12.B     7.63%    failed      0.00%
+  27  IDDLNTM7.C     11.49%    failed      0.00%
+  28  IDDLNTM131      5.90%    failed      0.00%
+  29  IDDLNTM40       7.49%    passed     37.94%
+  30  IDDLNTM64       9.26%    failed      0.00%
+  31  IDDLNTM152      8.96%    failed      3.65%
+  32  IDDLNTM96       6.49%    failed      0.00%
+  33  IDDLNTM113      7.87%    failed      0.00%
+  34  IDDLNTM120      6.92%    failed      0.00%
+  35  IDDLNTM132      6.49%    failed      0.00%
+  36  IDDLNTM146      6.95%    failed      0.00%
+  37  IDDLNTM111     15.32%    passed     89.17%
+  38  IDDLNTM136      5.90%    failed      0.00%
+  39  IDDLNTM14.A     5.02%    failed      0.00%
+  40  IDDLNTM108.B    7.63%    failed      0.00%
+  41  IDDLNTM41.B     5.02%    failed      0.00%
+  42  IDDLNTM18.B     7.87%    failed      0.00%
+  43  IDDLNTM121      7.90%    failed      0.00%
+  44  IDDLNTM108.A    7.63%    failed      0.00%
+  45  IDDLNTM72       7.57%    failed      0.00%
+  46  IDDLNTM117      6.92%    failed      0.00%
+  47  IDDLNTM52      10.58%    passed     33.78%
+  48  IDDLNTM70       6.49%    failed      0.00%
+  49  IDDLNTM4.C      6.92%    failed      0.00%
+  50  IDDLNTM19.C     5.02%    failed      0.00%
+  51  IDDLNTM32       7.63%    failed      0.00%
+  52  IDDLNTM13.B     6.92%    failed      0.00%
+  53  IDDLNTM73       7.57%    failed      0.00%
+  54  IDDLNTM141      7.87%    failed      0.00%
+  55  IDDLNTM109      7.87%    failed      0.00%
+  56  IDDLNTM58      11.84%    passed     30.62%
+  57  IDDLNTM112      8.13%    failed      0.00%
+  58  IDDLNTM55.A     6.98%    passed     31.48%
+  59  IDDLNTM105      6.55%    failed      0.00%
+  60  IDDLNTM6.A      7.87%    failed      0.00%
+  61  IDDLNTM75       7.57%    failed      0.00%
+  62  IDDLNTM97      19.10%    failed      0.00%
+  63  IDDLNTM89       5.90%    failed      0.00%
+  64  IDDLNTM139      7.87%    failed      0.00%
+  65  IDDLNTM41.A     6.92%    failed      0.00%
+  66  IDDLNTM107      7.87%    failed      0.00%
+  67  IDDLNTM33.C     7.63%    failed      0.00%
+  68  IDDLNTM45       6.49%    failed      0.00%
+  69  IDDLNTM39       7.87%    failed      0.00%
+  70  IDDLNTM38       6.49%    failed      0.00%
+  71  IDDLNTM43      13.07%    passed     57.65%
+  72  IDDLNTM46.A     7.87%    failed      0.00%
+  73  IDDLNTM135      5.31%    failed      0.00%
+  74  IDDLNTM143      7.87%    failed      0.00%
+  75  IDDLNTM90       7.08%    passed     49.76%
+  76  IDDLNTM140      5.93%    failed      0.00%
+  77  IDDLNTM14.B     7.87%    failed      0.00%
+  78  IDDLNTM88       7.90%    failed      0.00%
+  79  IDDLNTM22.B     7.87%    failed      0.00%
+  80  IDDLNTM2.C     11.29%    passed     12.37%
+  81  IDDLNTM84       6.49%    failed      0.00%
+  82  IDDLNTM68       6.49%    failed      0.00%
+  83  IDDLNTM50       7.63%    failed      0.00%
+  84  IDDLNTM83       7.63%    failed      0.00%
+  85  IDDLNTM144      7.87%    failed      0.00%
+  86  IDDLNTM10.A     5.02%    failed      0.00%
+  87  IDDLNTM10.B     5.02%    failed      0.00%
+  88  IDDLNTM126      6.49%    failed      0.00%
+  89  IDDLNTM55.B     7.06%    passed     36.01%
+  90  IDDLNTM71       6.49%    failed      0.00%
+  91  IDDLNTM6.B      5.02%    failed      0.00%
+  92  IDDLNTM149     11.49%    failed      0.00%
+  93  IDDLNTM85       5.90%    failed      0.00%
+  94  IDDLNTM15.A     6.92%    failed      0.00%
+  95  IDDLNTM128      6.49%    failed      0.00%
+  96  IDDLNTM86       6.49%    failed      0.00%
+  97  IDDLNTM33.B     7.63%    failed      0.00%
+  98  IDDLNTM5        6.49%    failed      0.00%
+  99  IDDLNTM76       7.57%    failed      0.00%
+ 100  IDDLNTM74       7.57%    failed      0.00%
+ 101  IDDLNTM60       6.92%    failed      0.00%
+ 102  IDDLNTM63       8.96%    failed      3.22%
+ 103  IDDLNTM18.A     6.92%    failed      0.00%
+ 104  IDDLNTM33.A     7.63%    failed      0.00%
+ 105  IDDLNTM13.A     7.87%    failed      0.00%
+ 106  IDDLNTM147      7.08%    passed     49.76%
+ 107  IDDLNTM148      6.92%    failed      0.00%
+ 108  IDDLNTM116      8.88%    failed      4.48%
+ 109  IDDLNTM41.C     7.87%    failed      0.00%
+ 110  IDDLNTM12.A     7.63%    failed      0.00%
+ 111  IDDLNTM7.A      7.90%    failed      0.00%
+ 112  IDDLNTM7.B      7.90%    failed      0.00%
+ 113  IDDLNTM20       6.92%    failed      0.00%
+ 114  IDDLNTM99       5.90%    failed      0.00%
+ 115  IDDLNTM15.B     6.92%    failed      0.00%
+ 116  IDDLNTM21.A     5.23%    failed      0.00%
+ 117  IDDLNTM46.B     7.63%    failed      0.00%
+ 118  IDDLNTM37       5.02%    failed      0.00%
+ 119  IDDLNTM137      7.87%    failed      0.00%
+ 120  IDDLNTM49       7.63%    failed      0.00%
+ 121  IDDLNTM56       7.87%    failed      0.00%
+ 122  IDDLNTM79       7.57%    failed      0.00%
+ 123  IDDLNTM67       6.49%    failed      0.00%
+****  TOTAL           7.56%  113 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: IDDLNTM94 is identical to IDDLNTM22.A but kept for subsequent analysis
+NOTE: IDDLNTM61 is identical to IDDLNTM59 but kept for subsequent analysis
+NOTE: IDDLNTM117 is identical to IDDLNTM100 but kept for subsequent analysis
+NOTE: IDDLNTM63 is identical to IDDLNTM145 but kept for subsequent analysis
+NOTE: IDDLNTM132 is identical to IDDLNTM82 but kept for subsequent analysis
+NOTE: IDDLNTM12.B is identical to IDDLNTM42 but kept for subsequent analysis
+NOTE: IDDLNTM129 is identical to IDDLNTM127 but kept for subsequent analysis
+NOTE: IDDLNTM77 is identical to IDDLNTM78 but kept for subsequent analysis
+NOTE: IDDLNTM46.A is identical to IDDLNTM48 but kept for subsequent analysis
+NOTE: IDDLNTM120 is identical to IDDLNTM4.A but kept for subsequent analysis
+NOTE: IDDLNTM116 is identical to IDDLNTM124 but kept for subsequent analysis
+NOTE: IDDLNTM101 is identical to IDDLNTM19.A but kept for subsequent analysis
+NOTE: IDDLNTM152 is identical to IDDLNTM102 but kept for subsequent analysis
+NOTE: IDDLNTM19.B is identical to IDDLNTM21.B but kept for subsequent analysis
+NOTE: IDDLNTM149 is identical to IDDLNTM7.C but kept for subsequent analysis
+NOTE: IDDLNTM136 is identical to IDDLNTM131 but kept for subsequent analysis
+NOTE: IDDLNTM18.B is identical to IDDLNTM113 but kept for subsequent analysis
+NOTE: IDDLNTM6.B is identical to IDDLNTM14.A but kept for subsequent analysis
+NOTE: IDDLNTM83 is identical to IDDLNTM108.B but kept for subsequent analysis
+NOTE: IDDLNTM88 is identical to IDDLNTM121 but kept for subsequent analysis
+NOTE: IDDLNTM68 is identical to IDDLNTM70 but kept for subsequent analysis
+NOTE: IDDLNTM41.C is identical to IDDLNTM39 but kept for subsequent analysis
+NOTE: IDDLNTM147 is identical to IDDLNTM90 but kept for subsequent analysis
+NOTE: IDDLNTM10.B is identical to IDDLNTM10.A but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.00662994 secs using 97.2% CPU
+Identifying sites to remove: done in 0.0144291 secs using 99.47% CPU
+NOTE: 47 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: IDDLNTM143 (identical to IDDLNTM22.A) is ignored but added at the end
+NOTE: IDDLNTM22.B (identical to IDDLNTM22.A) is ignored but added at the end
+NOTE: IDDLNTM144 (identical to IDDLNTM22.A) is ignored but added at the end
+NOTE: IDDLNTM56 (identical to IDDLNTM22.A) is ignored but added at the end
+NOTE: IDDLNTM44 (identical to IDDLNTM59) is ignored but added at the end
+NOTE: IDDLNTM60 (identical to IDDLNTM59) is ignored but added at the end
+NOTE: IDDLNTM148 (identical to IDDLNTM100) is ignored but added at the end
+NOTE: IDDLNTM45 (identical to IDDLNTM82) is ignored but added at the end
+NOTE: IDDLNTM84 (identical to IDDLNTM82) is ignored but added at the end
+NOTE: IDDLNTM126 (identical to IDDLNTM82) is ignored but added at the end
+NOTE: IDDLNTM128 (identical to IDDLNTM82) is ignored but added at the end
+NOTE: IDDLNTM86 (identical to IDDLNTM82) is ignored but added at the end
+NOTE: IDDLNTM5 (identical to IDDLNTM82) is ignored but added at the end
+NOTE: IDDLNTM108.A (identical to IDDLNTM42) is ignored but added at the end
+NOTE: IDDLNTM32 (identical to IDDLNTM42) is ignored but added at the end
+NOTE: IDDLNTM33.C (identical to IDDLNTM42) is ignored but added at the end
+NOTE: IDDLNTM50 (identical to IDDLNTM42) is ignored but added at the end
+NOTE: IDDLNTM33.B (identical to IDDLNTM42) is ignored but added at the end
+NOTE: IDDLNTM33.A (identical to IDDLNTM42) is ignored but added at the end
+NOTE: IDDLNTM12.A (identical to IDDLNTM42) is ignored but added at the end
+NOTE: IDDLNTM46.B (identical to IDDLNTM42) is ignored but added at the end
+NOTE: IDDLNTM49 (identical to IDDLNTM42) is ignored but added at the end
+NOTE: IDDLNTM72 (identical to IDDLNTM78) is ignored but added at the end
+NOTE: IDDLNTM73 (identical to IDDLNTM78) is ignored but added at the end
+NOTE: IDDLNTM75 (identical to IDDLNTM78) is ignored but added at the end
+NOTE: IDDLNTM76 (identical to IDDLNTM78) is ignored but added at the end
+NOTE: IDDLNTM74 (identical to IDDLNTM78) is ignored but added at the end
+NOTE: IDDLNTM79 (identical to IDDLNTM78) is ignored but added at the end
+NOTE: IDDLNTM4.C (identical to IDDLNTM4.A) is ignored but added at the end
+NOTE: IDDLNTM13.B (identical to IDDLNTM4.A) is ignored but added at the end
+NOTE: IDDLNTM15.A (identical to IDDLNTM4.A) is ignored but added at the end
+NOTE: IDDLNTM18.A (identical to IDDLNTM4.A) is ignored but added at the end
+NOTE: IDDLNTM15.B (identical to IDDLNTM4.A) is ignored but added at the end
+NOTE: IDDLNTM96 (identical to IDDLNTM19.A) is ignored but added at the end
+NOTE: IDDLNTM38 (identical to IDDLNTM19.A) is ignored but added at the end
+NOTE: IDDLNTM20 (identical to IDDLNTM21.B) is ignored but added at the end
+NOTE: IDDLNTM89 (identical to IDDLNTM131) is ignored but added at the end
+NOTE: IDDLNTM85 (identical to IDDLNTM131) is ignored but added at the end
+NOTE: IDDLNTM99 (identical to IDDLNTM131) is ignored but added at the end
+NOTE: IDDLNTM109 (identical to IDDLNTM113) is ignored but added at the end
+NOTE: IDDLNTM6.A (identical to IDDLNTM113) is ignored but added at the end
+NOTE: IDDLNTM14.B (identical to IDDLNTM113) is ignored but added at the end
+NOTE: IDDLNTM13.A (identical to IDDLNTM113) is ignored but added at the end
+NOTE: IDDLNTM7.A (identical to IDDLNTM121) is ignored but added at the end
+NOTE: IDDLNTM7.B (identical to IDDLNTM121) is ignored but added at the end
+NOTE: IDDLNTM71 (identical to IDDLNTM70) is ignored but added at the end
+NOTE: IDDLNTM67 (identical to IDDLNTM70) is ignored but added at the end
+Alignment was printed to ../assemblies/panaroo_out/core_gene_alignment_filtered.aln.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to ../assemblies/panaroo_out/core_gene_alignment_filtered.aln.uniqueseq.phy
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.026 seconds
+
+NOTE: 47 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -93939.831
+2. Current log-likelihood: -91314.578
+3. Current log-likelihood: -91241.414
+4. Current log-likelihood: -91240.624
+Optimal log-likelihood: -91240.606
+Rate parameters:  A-C: 1.26364  A-G: 3.11632  A-T: 1.34797  C-G: 2.80239  C-T: 5.44109  G-T: 1.00000
+Base frequencies:  A: 0.180  C: 0.339  G: 0.333  T: 0.148
+Gamma shape alpha: 0.311
+Parameters optimization took 4 rounds (2.845 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.0600319 secs using 99.94% CPU
+Computing ML distances took 0.062117 sec (of wall-clock time) 0.062083 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.0004251 secs using 99.98% CPU
+Constructing RapidNJ tree: done in 0.000942945 secs using 99.79% CPU
+Computing RapidNJ tree took 0.001478 sec (of wall-clock time) 0.001476 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -91467.041
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 2.797 second
+Computing log-likelihood of 98 initial trees ... 6.323 seconds
+Current best score: -91194.774
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -91180.076
+Iteration 10 / LogL: -91193.829 / Time: 0h:0m:22s
+Iteration 20 / LogL: -91193.844 / Time: 0h:0m:32s
+Finish initializing candidate tree set (20)
+Current best tree score: -91180.076 / CPU time: 29.137
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+BETTER TREE FOUND at iteration 21: -91180.072
+Iteration 30 / LogL: -91180.187 / Time: 0h:0m:46s (0h:2m:25s left)
+Iteration 40 / LogL: -91197.283 / Time: 0h:1m:1s (0h:2m:7s left)
+Iteration 50 / LogL: -91357.262 / Time: 0h:1m:16s (0h:1m:50s left)
+Iteration 60 / LogL: -91180.292 / Time: 0h:1m:29s (0h:1m:32s left)
+Iteration 70 / LogL: -91180.193 / Time: 0h:1m:44s (0h:1m:17s left)
+Iteration 80 / LogL: -91180.219 / Time: 0h:1m:59s (0h:1m:2s left)
+Iteration 90 / LogL: -91180.147 / Time: 0h:2m:14s (0h:0m:46s left)
+Iteration 100 / LogL: -91280.396 / Time: 0h:2m:28s (0h:0m:31s left)
+Iteration 110 / LogL: -91180.212 / Time: 0h:2m:43s (0h:0m:16s left)
+Iteration 120 / LogL: -91180.229 / Time: 0h:2m:57s (0h:0m:1s left)
+TREE SEARCH COMPLETED AFTER 122 ITERATIONS / Time: 0h:2m:59s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -91180.072
+Optimal log-likelihood: -91180.065
+Rate parameters:  A-C: 1.26160  A-G: 3.12376  A-T: 1.33848  C-G: 2.81134  C-T: 5.43654  G-T: 1.00000
+Base frequencies:  A: 0.180  C: 0.339  G: 0.333  T: 0.148
+Gamma shape alpha: 0.311
+Parameters optimization took 1 rounds (0.286 sec)
+BEST SCORE FOUND : -91180.065
+Total tree length: 1.116
+
+Total number of iterations: 122
+CPU time used for tree search: 176.286 sec (0h:2m:56s)
+Wall-clock time used for tree search: 176.602 sec (0h:2m:56s)
+Total CPU time used: 179.992 sec (0h:2m:59s)
+Total wall-clock time used: 180.242 sec (0h:3m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                ../assemblies/panaroo_out/core_gene_alignment_filtered.aln.iqtree
+  Maximum-likelihood tree:       ../assemblies/panaroo_out/core_gene_alignment_filtered.aln.treefile
+  Likelihood distances:          ../assemblies/panaroo_out/core_gene_alignment_filtered.aln.mldist
+  Screen log file:               ../assemblies/panaroo_out/core_gene_alignment_filtered.aln.log
+
+Date and Time: Sat Oct 31 20:16:50 2026
