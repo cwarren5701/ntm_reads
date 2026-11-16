@@ -3,7 +3,8 @@ tip_labels_num_only <- str_remove(tip_labels, "^IDDLNTM")
 tip_labels_num_only <- str_c("IDDL", tip_labels_num_only)
 tip_labels_table <- tibble(
   tip_label = tip_labels,
-  cleaned_tip_label = str_remove(tip_labels_num_only, "\\.[ABC]$")
+  cleaned_tip_label = str_remove(tip_labels_num_only, "\\.[ABC]$"),
+  PT_num_col = ""
 )
 planet_lab_IDs <- (meta %>% pull(`Planet Lab ID`))
 
@@ -17,6 +18,7 @@ for (ID in tip_labels_table$cleaned_tip_label) {
       # get PT# from cleaned label - A, B, or C duplicates will share same PT#
       PT_num <- pull(filter(meta, `Planet Lab ID` == ID), `PT#`)
       tree_with_PT$tip.label[tree_with_PT$tip.label == label] <- paste(tree_with_PT$tip.label[tree_with_PT$tip.label == label], PT_num, sep = ".")
+      tip_labels_table$PT_num_col[tip_labels_table$cleaned_tip_label == ID] <- PT_num
       count <- count + 1
     }
   }
